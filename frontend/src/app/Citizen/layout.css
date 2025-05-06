@@ -1,0 +1,13 @@
+.hover-zoom {
+   transition: "transform 0.9s ease-in-out, box-shadow 0.9s ease-in-out"
+  }
+  .hover-zoom:hover {
+    transform: scale(1.2);
+  }
+ 
+.logbutton:hover{
+  background-color: #D1D5DB;
+  color: white;
+
+}  
+  

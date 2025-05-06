@@ -1,0 +1,7 @@
+const { Login, GetMenus } = require('./AgentLogin')
+const { CreatePermitBill, GetPermit, getpermitbyid, AgentProfile, GetPermitBill, UpdatePermitBill, GetTransactionHistory } = require('./ChalanManagement')
+const { PayBill, GetPaymentToken, CashPayBill, GetPaymentTokenForLicense, PayLicenseBill, LicenseCashPayBill } = require('./Payment')
+const { CustomerManagement, GetCustomer, GetCustomerData, GetCustomerList } = require('./CustomerManagement')
+const { AgentCustomerForm, LocalityRate, PropertyRate } = require('./Helper')
+const { CreateLicense, GetCustomerLicense, CreateLicenseBill, GetLicenseDetails, GetLicenseBill, GetLicenseTransactionHistory, GetGalaDetails } = require('./LicenseManagement')
+module.exports = { AgentCustomerForm, CustomerManagement, GetCustomer, GetCustomerData, GetCustomerList, CashPayBill, GetPaymentToken, Login, GetMenus, CreatePermitBill, GetPermit, getpermitbyid, AgentProfile, GetPermitBill, PayBill, UpdatePermitBill, GetTransactionHistory, CreateLicense, GetCustomerLicense, CreateLicenseBill, GetLicenseDetails, GetLicenseBill, GetPaymentTokenForLicense, PayLicenseBill, LicenseCashPayBill, GetLicenseTransactionHistory, GetGalaDetails, LocalityRate, PropertyRate }

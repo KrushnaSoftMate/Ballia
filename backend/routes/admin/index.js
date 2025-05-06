@@ -1,0 +1,11 @@
+const Admin = require('./Admin')
+const CustomerManagement = require('./CustomerManagement')
+const HelperApi = require('./HelperApi')
+const CustomerPayment = require('./CustomerPayment')
+const MasterApi = require("./Master")
+const EmployeeManagement = require('./EmployeeManagement')
+const Reports = require('./Reports')
+const ChalanManagement = require('./ChalanManagement')
+const Agent = require('./Agent')
+const LicenseManagements = require('./LicenseManagement')
+module.exports = { Admin, CustomerManagement, HelperApi, CustomerPayment, MasterApi, EmployeeManagement, Reports, ChalanManagement, Agent,LicenseManagements }

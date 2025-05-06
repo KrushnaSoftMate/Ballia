@@ -1,0 +1,28 @@
+.LocalityRatedTableContainer {
+    .tableConatiner {
+        table {
+            /* border: 1px solid black; */
+
+            thead {
+                background-color: rgba(2, 238, 255, 0.199);
+                font-size: 16px;
+                th {
+                    padding: 10px 0px !important;
+                }
+            }
+
+            tbody {
+                font-size: 16px !important;
+                font-weight: 500 !important;
+
+                td {
+                    padding: 8px 0px !important;
+                }
+
+                .leftALogn {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

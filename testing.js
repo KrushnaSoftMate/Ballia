@@ -1,1 +1,0 @@
-notepad %USERPROFILE%\.ssh\id_rsa.pub

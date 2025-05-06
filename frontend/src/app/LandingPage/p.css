@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.navbar-brand1-container,
+.property-tax-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-brand1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.navbar-brand1 img {
+    height: 80px;
+}
+
+.property-tax-container {
+    display: grid;
+    text-align: center;
+}
+
+
+
+.btnredhover {
+    text-decoration: none !important;
+    color: white !important;
+    font-size: large !important;
+    width: auto;
+    text-align: center;
+    padding: 2px;
+    font-weight: 600 !important;
+}
+
+.btnredhover:hover {
+    background-color: rgb(174, 50, 50);
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+.scroll-content123 {
+    color: white;
+    height: 17rem;
+    overflow: hidden;
+    /* Changed from auto to hidden for smooth scrolling */
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    background-color: white;
+}
+
+
+
+@keyframes scroll-vertical {
+    from {
+        overscroll-behavior-y: 100%;
+    }
+
+    to {
+        overflow-y: 100;
+    }
+}
+
+.vc_column_container>.vc_column-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.peoplecard {
+    border-radius: 100%;
+    height: 20rem;
+    width: 18rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.peopleimg {
+    border-radius: 100%;
+    height: 10rem;
+    width: 11rem;
+}
+
+h5 {
+    line-height: inherit;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .navbarofitems {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbarofitems a {
+        margin: 10px 0;
+    }
+
+    div[style*="justify-content: space-between"] {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    div[style*="width: 30%"] {
+        width: 100%;
+        padding: 0;
+    }
+
+    div[style*="paddingLeft: 3rem"] {
+        padding-left: 0;
+    }
+
+    div[style*="paddingRight: 3rem"] {
+        padding-right: 0;
+        margin-top: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-brand-container,
+    .property-tax-container {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .navbar-brand1 img {
+        height: 60px;
+    }
+
+    .property-tax-container {
+        padding-top: 0;
+    }
+
+    .property-tax-container img {
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-content {
+        justify-content: center;
+    }
+
+    .carousel-content .card {
+        flex: 1 0 35%;
+        /* Show 2 cards per row */
+        margin: 0.5rem;
+    }
+
+    .peoplecard {
+        width: 22rem;
+    }
+    .peopleimg {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    
+    
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    div[style*="height: 80px"] {
+        height: 50px;
+    }
+
+    div[style*="justify-content: center"] {
+        padding: 0;
+    }
+
+    .navbarofitems a {
+        font-size: 14px;
+    }
+    .carousel-content .card {
+        flex: 1 0 30%;
+        /* Show 2 cards per row */
+        margin: 0.5rem;
+    }
+
+    .ct{
+        height: 22vh;
+    }
+
+    .ct img{
+        height: 22vh !important; 
+    }
+
+    .peoplecard {
+        width: 11rem;
+    }
+    .peopleimg {
+        height: 6rem;
+        width: 6rem;
+    }
+    .footmob{
+        padding-bottom: 2rem;
+    }
+    .lastfoot{
+        padding-top: 2rem;
+    }
+    .col-6{
+        width: 95% !important;
+    }
+    .first{
+        width: 20rem !important;
+        text-align: center;
+    }
+    .second{
+        width: 21rem !important;
+    }
+    .c1{
+        margin-top: 1rem;
+    }
+    .map{
+        width: 85vw !important;
+    }
+    .contus{
+        padding: 1rem;
+    }
+    
+}
+
+.carousel-content {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.custombuttondesign{
+    border-radius: 15px;
+    background-color: transparent;
+    height: 10%;
+    width: 100%;
+    margin: 1rem;
+    font-size: x-large;
+    color: black;
+}
+.custombuttondesign:hover{
+    border-radius: 15px;
+    background-color: #ff8c00;
+    height: 10%;
+    width: 100%;
+    margin: 1rem;
+    font-size: x-large;
+    color: white;
+}
+
+
+.innercustomcard{
+    height: 100%;
+    width: 15rem;
+    background-color: rgb(242, 242, 242);
+    border-radius: 1px;
+    border: white 1px solid;
+    box-shadow: 0px -1px 10px 0px;
+}
+.innercustomcardimg{
+    HEIGHT: 100%;
+    WIDTH: 100%;
+}
+.gallery{
+    background-color: rgba(0, 0, 0, 0.567);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    height: 100vh;
+    width: 98vw;
+    top: 42rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galleryclose{
+    position: relative;
+    bottom: 45%;
+    left: 68%;
+    z-index: 119;
+}
+.manualcard{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.552);
+}
+.hovercardgallery:hover .manualcard{
+display: block;
+background-color: rgba(0, 0, 0, 0.552);
+backdrop-filter: blur(5px);
+}
+
+
+.cashpaymentpopup{
+    background-color: rgba(0, 0, 0, 0.567);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    height: 100vh;
+    width: 98vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

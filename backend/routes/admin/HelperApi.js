@@ -1,0 +1,10 @@
+const { CustomerForm,GetCordinatesOnStart, GetCordinates,FetchFolderName,LocalityRate,PropertyRate } = require('../../controllers/admin/index')
+const app = require('express').Router()
+const { MiddleCheck } = require('../../Middleware/admin/MiddleWare')
+app.get('/CustomerForm', CustomerForm)
+app.get('/GetCordinatesOnStart',MiddleCheck,GetCordinatesOnStart)
+app.post('/GetCordinates', MiddleCheck, GetCordinates)
+app.get('/FetchFolderName', MiddleCheck, FetchFolderName)
+app.post('/LocalityRate', LocalityRate)
+app.post('/PropertyRate', PropertyRate)
+module.exports = app

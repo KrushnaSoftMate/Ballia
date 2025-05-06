@@ -1,0 +1,189 @@
+body{
+ 
+    height:100vh;
+    width: 100vw;
+    background-size:cover;
+    background-repeat:repeat-y;
+    background-position-y:-60px;
+   
+  }
+  
+  
+  main {
+    text-align: center;
+    vertical-align: center;
+    line-height: 100vh
+  }
+  .username{
+    font-size:10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    color:blue;
+    font-weight:700;
+    text-align:right;
+  }
+  .login{
+    background-image:url('https://as2.ftcdn.net/v2/jpg/04/99/10/89/1000_F_499108973_bXJNoRbuZ5b59Mfymh7YuN3j3hlKjYXb.jpg');
+    height:auto;
+    width:auto;
+    background-size:cover;
+    background-repeat:repeat-y;
+    background-position-y:-60px
+  }
+  
+  
+  .insidelogin{
+    background-color:black;
+    filter:opacity(0.7);
+    color:whitesmoke;
+    justify-content:center;
+    justify-items:center;
+    text-align:center;
+    padding:1rem;
+    margin:3rem;
+    border-radius:1rem;
+  }
+  .AI{
+    display: flex;
+    flex-direction: column;
+    margin-left: 21px;
+      margin-top: 10px;
+      margin-right: 14px;
+  }
+  .sentmess{
+    align-self: flex-end; /* Align sent messages to the right */
+    text-align: left;
+    background-color: orange;
+    color: black;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+    max-width:80%;
+  }
+  .reply{
+     align-self: flex-start; /* Align received messages to the left */
+    text-align: left;
+    background-color: #24b724;
+    color: black;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+    max-width:80%;
+  }
+  .chatbox{
+    display: flex ;
+    flex-direction:column;
+  color: white;
+  background-image: url('https://img.freepik.com/premium-vector/social-networks-dating-apps-vector-seamless-pattern_341076-469.jpg');
+    overflow-y: scroll;
+    height: 90vh;
+    position:space-between;
+    width:100%;
+    padding-bottom:5rem;
+   
+  }
+  
+  
+  .navbar {
+          background-color: rgba(0, 0, 0, 1);
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 4vh;
+          position: fixed;
+          width: 100%;
+  }
+  
+  
+    .messagebox {
+          margin: 1vw;
+          height: auto;
+          width: 80vw;
+          border-radius: 3rem;
+          resize: vertical;
+        }
+        .buttonsub {
+          margin: 1vw;
+          height: 6vh;
+          width: 10vw;
+          background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          text-align: center;
+          background-position: center;
+          border: 0 none;
+          background-color: transparent;
+        }
+        .input-container1 {
+          display: inline-flex;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          padding:0.5rem;
+           background-color: grey;
+        }
+  
+  
+  #w-input-container {
+    position: flex-start;
+    bottom: 0;
+    width: 70%;
+    min-height: 20px;
+    box-sizing: border-box;
+    padding: 9px 18px 11px;
+    margin: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 21px;
+  }
+  
+  
+  .w-input-text-group {
+    position: relative;
+  }
+  
+  
+  .w-placeholder {
+    color: #a0a0a0;
+    top: 0;
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s padding ease-in-out;
+  }
+  
+  
+  #w-input-text {
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    z-index: 1;
+    max-height: 100px;
+    min-height: 20px;
+    padding: 0 0 0 2px;
+    outline: 0;
+    transition: 0.2s padding ease-in-out;
+  }
+  
+  
+  #w-input-text:empty + .w-placeholder {
+    opacity: 1;
+  }
+  
+  
+  #w-input-text:focus + .w-placeholder {
+    padding: 0 6px 0px;
+  }
+  
+  
+  #w-input-text:focus {
+    padding: 0 6px 0px;
+  }

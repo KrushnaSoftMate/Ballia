@@ -1,0 +1,250 @@
+.panel{
+    display: none;
+    animation: fadeIn 1s both;
+    
+}
+.showpanel{
+    display: grid;
+    animation: fadeIn 1s both;
+
+}
+
+.listchange{
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+}
+.outeracord{
+    padding: 0;
+    border: none;
+    background-color: #f3eeea ;
+    font-size: large;
+    padding-left: 8px;
+}
+
+.loader {
+  height: 70px;
+  width: 70px;
+  border: 7px solid;
+  border-radius: 50%;
+  border-color: red transparent orange transparent;
+  animation: animate 1.5s linear infinite;
+ }
+
+ @keyframes animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+ }
+
+@keyframes fadeIn {
+    from {
+        transform: translateX(-100%); 
+      }
+      to {
+        transform: translateX(0);
+      }
+    
+  }
+
+  
+.homepage{
+    /* background-image: url('../../../public/LoginImages/Cotton-Background.png'); */
+  background-size: cover;
+  background-size: 100vw 100vh;
+}
+
+.navg{
+background: rgba(white, 0.4);
+}
+
+.astyle{
+  padding: 8px;
+  color: white;
+  font-size: 10px;
+ 
+}
+
+.subnav{
+  background: rgba(white, 0.4);
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+button{
+  border:none;
+  border-radius:5px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+ 
+  cursor:pointer;
+  border: none;
+  background-color: transparent;
+}
+
+
+.dropdown-options {
+  display: none;
+  position: absolute !important;
+  overflow: auto;
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  z-index: 5;
+  width: 15rem;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  padding: 5px; 
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+  /* this need to change */
+  padding-top: 6px;
+  padding-left: 53px;
+}
+
+.img-fluid1{
+  max-width: 100%;
+  height: 50vh;
+  /* background-image: url('../../../public/LoginImages/sideimage.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* this need to chnage */
+}
+
+.dashclass{
+  border:none;
+  border-radius:5px;
+  color: white;
+  font-size: 23px;
+  font-weight: bolder;
+  padding:  1px 1rem 1px 1rem;
+  cursor:pointer;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: transparent;
+}
+.astyle{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+.tabsbutton{
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  color: black;
+  font-size:unset
+}
+.tabsbutton:hover{
+  background-color: #2d348e !important;
+  color: white !important;
+}
+.icon {
+  padding-left: 25px;
+  /* background: url(https://softmategroup.com/assets/images/My_Dashboard/Search.png) no-repeat left; */
+  background-size: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 1rem;
+}
+.liststyle{
+  border: none;
+  padding: 0;
+  padding-left: 1rem;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #fff2e9;
+}
+
+.headerstyle{
+    /* background-image: url('http://localhost:7777/LoginImages/reciept.png'); */
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 67vh;
+    } 
+    .footerstyle{
+      /* background-image: url('http://localhost:7777/LoginImages/footer.png'); */
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 19vh;
+    }
+    .hovereffect {
+      transition: transform 0.5s, box-shadow 0.5s;
+      border-radius: 10px;
+      overflow: hidden;
+  }
+  .hovereffect:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #f1772e;
+      border: 1px solid #f1772e;
+  }
+  
+  
+  
+  
+  .card-img-top {
+      border-radius: 10px 10px 0 0;
+  }
+  
+  .bidder_register_form{
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .download_reciept_button{
+    display: flex;
+    justify-content: center
+    
+  }
+  
+  .searchTender{
+    width: 40vw;
+    height: 80%;
+  }
+  
+  .register-pop{
+    background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8));
+  }
+  
+  @media screen and  (max-width:  768px){
+    .searchTender{
+      width: 80vw;
+      height: 80%;
+    }
+  }
+.listchange{
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,57 @@
+.table-container {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .tax-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tax-table th, .tax-table td {
+    border: 1px solid #a5a6a9 !important;
+    padding: 8px;
+    
+  }
+  
+  .tax-table th {
+    background-color: #d6e1f9 !important;
+    font-weight: bold;
+   
+  }
+  
+  .tax-table tfoot td {
+    font-weight: bold;
+    background-color: #eaeaea;
+  }
+  
+  .tax-table thead th {
+    text-transform: uppercase;
+
+  }
+  
+  .tax-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .tax-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  p{
+    color: white;
+  }
+  .card-text{
+    color: white;
+  }
+ h6{
+    color: white;
+  }
+  /* .card:hover{
+    transform: scale(1.05);
+  } */
+  

@@ -1,0 +1,26 @@
+.mydrop{
+    z-index: 5;
+    position: relative;
+    background-color: #c6c6c6;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 13rem;
+    left: -44px;
+    box-shadow: 0px 1px 14px 5px;
+}
+.mydroppop{
+    z-index: 5;
+    position: absolute;
+    background-color: #c6c6c6;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 99%;
+    top: 163%;
+    left: 0px;
+    box-shadow: 0px 1px 14px 5px;
+}
+
+.dropdown-list{
+    height: 9rem;
+    overflow: auto;
+}

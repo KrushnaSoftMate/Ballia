@@ -1,0 +1,61 @@
+/* Base grid layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default 4 columns for desktops */
+  gap: 1rem; /* Space between items */
+  padding: 1rem;
+}
+
+/* Card styles */
+.card-container {
+  display: flex;
+  width: 15rem;
+  height: 11rem;
+  gap: 33px; /* Maintains spacing between image and text */
+  padding: 23px 20px; /* Original padding */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Original shadow */
+  border-radius: 20px; /* Original border radius */
+  cursor: pointer;
+  background-color: white; /* Original background color */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Original hover transition */
+  aspect-ratio: 1 / 1; /* Ensures equal width and height */
+}
+
+.card-container:hover {
+  transform: translateY(-5px); /* Hover effect */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Hover shadow */
+}
+
+.card-container.active {
+  background-color: #e40713; /* Active state background */
+  color: white; /* Active state text color */
+  box-shadow: 0px 6px 12px rgba(228, 7, 19, 0.5); /* Active state shadow */
+}
+
+.card-text {
+  font-weight: 600; /* Text styling */
+  font-size: 18px; /* Original font size */
+  line-height: 1.2; /* Adjusted for better alignment */
+  color: #202224; /* Original text color */
+  text-align: center;
+  margin-top: 1rem; /* Maintains spacing below image */
+}
+
+/* Responsive grid for different screen sizes */
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+}

@@ -1,0 +1,13 @@
+const { DashboardReport, DashboardChartForZone,DashboardChartForWard,DashboardChartForTotals,DashboardChartForToday,TransactionReports, CustomerReport,NoticeofdemandReports, DashboardChart} = require('../../controllers/admin/index')
+const app = require('express').Router()
+const { MiddleCheck } = require('../../Middleware/admin/MiddleWare')
+app.get('/DashboardReport', MiddleCheck, DashboardReport)
+app.post('/DashboardChartForZone', MiddleCheck, DashboardChartForZone)
+app.post('/DashboardChartForWard', MiddleCheck, DashboardChartForWard)
+app.post('/DashboardChartForTotals', MiddleCheck, DashboardChartForTotals)
+app.post('/DashboardChartForToday', MiddleCheck, DashboardChartForToday)
+app.post('/CustomerReport', MiddleCheck, CustomerReport)
+app.post('/TransactionReports',MiddleCheck,TransactionReports)
+app.post('/NoticeofdemandReports',MiddleCheck,NoticeofdemandReports)
+app.get("/DashboardChart",MiddleCheck,DashboardChart)
+module.exports = app

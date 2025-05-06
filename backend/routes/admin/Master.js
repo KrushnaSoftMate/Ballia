@@ -1,0 +1,28 @@
+const express = require("express")
+const app = express.Router()
+const { LocalityRates, SetLocalityRates, DocumentsType, SetDocumentType, deleteDocumenttype, LocalityTypes, SetLocalityTypes, TaxType, SetTaxType, deletetaxtype, PropertyTypes, addPropertyType, deletePropertyType, PermitTypes, AddPermitType, DisablePermitType, DiscountType, SetDiscountType, deleteRatetype, DeleteDiscountType, DashboardChart } = require("../../controllers/admin/Master")
+const { MiddleCheck } = require("../../Middleware/admin/MiddleWare")
+
+app.get("/getlocalityrates", MiddleCheck, LocalityRates)
+app.post("/setlocalityrates", MiddleCheck, SetLocalityRates)
+app.get("/getdocumenttype", MiddleCheck, DocumentsType)
+app.post("/setdocumenttype", MiddleCheck, SetDocumentType)
+app.post("/deletedocumenttype", MiddleCheck, deleteDocumenttype)
+app.get("/getlocalitytypes", MiddleCheck, LocalityTypes)
+app.post("/setlocalitytypes", MiddleCheck, SetLocalityTypes)
+app.get("/gettaxtype", MiddleCheck, TaxType)
+app.post("/settaxtype", MiddleCheck, SetTaxType)
+app.post("/deletetaxtype", MiddleCheck, deletetaxtype)
+app.get("/getpropertytypes", MiddleCheck, PropertyTypes)
+app.post("/addPropertyType", MiddleCheck, addPropertyType)
+app.post("/deletePropertyType", MiddleCheck, deletePropertyType)
+app.get("/GetPermitTypes", MiddleCheck, PermitTypes)
+app.post("/AddPermitType", MiddleCheck, AddPermitType)
+app.post("/DisablePermitType", MiddleCheck, DisablePermitType)
+app.get("/DiscountType", MiddleCheck, DiscountType)
+app.post("/SetDiscountType", MiddleCheck, SetDiscountType)
+app.post("/deleteRatetype", MiddleCheck, deleteRatetype)
+app.get("/DeleteDiscountType", MiddleCheck, DeleteDiscountType)
+
+
+module.exports = app;

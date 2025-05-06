@@ -1,0 +1,30 @@
+/* styles.css */
+
+/* Base styles for menu items */
+.menu-item {
+    display: flex;
+    gap: 1rem;
+    color: black;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 1rem;
+    width: 90%;
+    height: 50px;
+    border-radius: 1rem;
+    margin-left: 2px;
+    background-color: #fff; /* Default background color */
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Hover effect */
+  .menu-item:hover {
+    background-color: #e9a0a0; /* Hover background color */
+  }
+  
+  /* Selected state */
+  .menu-item.selected {
+    background-color: #d4d4d4; /* Selected background color */
+  }
+  

@@ -1,0 +1,41 @@
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .printableTable,
+    .printableTable * {
+        visibility: visible;
+    }
+
+    .printableTable {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+
+
+.tableContainer {
+    table {
+        width: 100%;
+
+        tr {
+            border: 1px solid black;
+        }
+
+        th {
+            padding: 10px 0px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        td {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            padding: 13px 0px;
+        }
+    }
+}

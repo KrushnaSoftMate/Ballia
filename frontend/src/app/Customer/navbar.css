@@ -1,0 +1,80 @@
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#26262c;
+    display:none;
+  }  
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:0;
+    width:440px;
+    height:850px;
+    display:none;
+    z-index:9999;
+    padding:20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #boxes #dialog {
+    width:470px; 
+    height:auto;
+    padding: 10px 10px 10px 10px;
+    background-color:#DEDEDE;
+    font-size: 15pt;
+  }
+  
+  .agree:hover{
+    background-color: #D1D1D1;
+  }
+  .popupoption:hover{
+   background-color:#D1D1D1;
+   color: green;
+  }
+  .popupoption2:hover{
+   color: red;
+  }
+
+  /* .hoverjs{
+    height: 100%;
+    width: 100%;
+   
+   }
+
+   .hoverjs:hover{
+    transition: all ease-in-out 1s;
+   animation: Cardanimate alternate 1s;
+   }
+
+   @keyframes Cardanimate {
+      from{
+        background-color: aqua;
+         transform: scale(0.5) translate(-100%, -100%);;
+      }
+      to{
+        background-color: blue;
+        transform: scale(1) translate(-100%, -100%);
+      }
+   } */
+  
+   .loader {
+    height: 70px;
+    width: 70px;
+    border: 7px solid;
+    border-radius: 50%;
+    border-color: red transparent orange transparent;
+    animation: animate 1.5s linear infinite;
+   }
+
+
+   @keyframes animate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+   }
+  
